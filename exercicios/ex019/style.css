@@ -1,0 +1,45 @@
+@charset "UTF-8";
+ /* em HTML é id = em CSS é # (só pode um elemento
+  por pag)
+    em HTML é class = em CSS é . (pode ter varios elementos)*/
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+    background-color: rgb(238, 246, 252);
+}
+h1 {
+    color: #252529;
+    
+}
+h1#principal {
+    text-align: center;
+    background-image: linear-gradient(to right, #252529,#000000 ) ;
+    color: white;
+
+}
+h2 {
+    color: rgb(43, 43, 94);
+}
+.basico {
+    font-weight: bolder;
+    color: white;
+    background-image: linear-gradient(to right, #272450,#2f1799 )
+    
+}
+.intermediario{
+    color: rgb(52, 36, 53);
+    font-weight:bolder;
+   
+    
+}
+.avançado{
+    color: white;
+    background-image: linear-gradient(to right, #244050,#175499 )
+
+}
+.destaque {
+    color: white;
+    background-color: #272450;
+}
