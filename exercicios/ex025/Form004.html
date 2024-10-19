@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        input{
+            padding: 3px;
+            margin: 3px;
+        }
+        label{
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label> <br>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required placeholder="Nome" size="25">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label> <br>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Endereço de e-mail" size="25">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label> <br>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required  pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" size="25">
+            </p>
+            <p>
+                <label for="isenha">Nova Senha:</label><br>
+                <input type="password" name="senha" id="isenha"
+                required placeholder="Nova senha" minlength="8" maxlength="20" size="25">
+            </p>
+            <p>
+                <label for="isenha">Confirme a Senha:</label><br>
+                <input type="password" name="senha" id="isenha"
+                required placeholder="Confirme a senha" minlength="8" maxlength="20" size="25">
+            </p>
+        </fieldset>
+        <!--Estudar mais dobre RegEx-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
